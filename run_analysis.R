@@ -1,6 +1,7 @@
 library(dplyr)
 
 ##read the required data files from "UCI HAR Dataset" - Folder
+##This script should be saved in a folder which contains the "UCI HAR Dataset" - Folder
 
     ## 1. Test Data:
     X_test<-read.table("./UCI HAR Dataset/test/X_test.txt")
@@ -42,4 +43,9 @@ library(dplyr)
     X_mean_std$subject<-subject_complete$V1
 
 ##Save X_mean_std
-    write.table(X_mean_std, "X_mean_std.txt")
+    write.table(X_mean_std, "X_mean_std.txt", row.name=FALSE)
+
+##Starting from X_mean_std, average each variable for each activity and each subject:
+    
+    Tidydata <- aggregate(. ~subject + activity, X_mean_std, mean)
+    write.table(Tidydata, "Tidydata.txt", row.name=FALSE)
