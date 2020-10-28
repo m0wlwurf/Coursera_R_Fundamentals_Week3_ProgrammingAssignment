@@ -7,4 +7,4 @@ The last two columns of the tidy data set are labled "activity" and "subject".
 "activity" contains a description the activity for each row. This description was assigned by using the files "y_train.txt", "y_test.txt", which contain numeric activity identifiers for each row. The numeric activity identifiers were translated into descriptive activities using the file "activity_labels.txt".
 The column "subject" contains the numeric subject identifiers found in the files "subject_train.txt", "subject_test.txt".
 
-The table "Tidydata.txt" is the requested result according to task 5 of the assignment. For all variables, the means with respect to a grouping to both subject and activity is calculated.
+The table "Tidydata.txt" is the requested result according to task 5 of the assignment. For all variables, the means with respect to a grouping to both subject and activity is calculated. It uses the dataset "X_mean_std" as basis for this processing.
