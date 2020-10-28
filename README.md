@@ -10,5 +10,6 @@ The script consists of the following steps (see also comments in the script file
 5. Translate the "activity ID" into descriptive activities for each observation and add a column "activities" containing the descriptive activities to the dataset
 6. Add a column "subject" which identifies the subject for each observation.
 7. Store the resulting dataset in a text-file ("X_mean_std.txt") in the selected working directory.
+8. Calculate means for all variables for each group based on activity and subject
 
 For more information, check the comments & code within the script.
